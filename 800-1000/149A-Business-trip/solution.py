@@ -1,0 +1,15 @@
+k=int(input())
+aList=list(map(int,input().split()))
+aList.sort()
+ans=0
+cm=0
+if(k==0):
+    ans=0
+elif(sum(aList)<k):
+    ans=-1
+else:
+    while(cm<k):
+        ans+=1
+        cm+=aList[len(aList)-1]
+        aList.pop()
+print(ans)
