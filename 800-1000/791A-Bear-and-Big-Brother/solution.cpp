@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    int a, b;
+    cin >> a >> b;
+    int yrs = 0;
+    while (a <= b) {
+        yrs++;
+        a = a * 3;
+        b = b * 2;
+    }
+    cout << yrs << endl;
+    return 0;
+}
